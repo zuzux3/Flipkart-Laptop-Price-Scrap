@@ -14,7 +14,7 @@ soup = BeautifulSoup(content)
 for a in soup.findAll('a', href=True, attrs={'class': '_1fQZEK'}):
     name = a.find('div', attrs={'class':'_4rR01T'})
     rating = a.find('div', attrs={'class':'_3LWZlK'})
-    price = a.find('div', attrs={'class', '_3tbKJL _1_WHN1'})
+    price = a.find('div', attrs={'class', '_30jeq3 _1_WHN1'})
     products.append(name.text)
     ratings.append(rating.text)
     prices.append(price.text)
